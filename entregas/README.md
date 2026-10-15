@@ -14,3 +14,7 @@ No GitHub, abra `calendario.mp4` e use **Download raw file** para baixar o víde
 ## Outubro Movimente
 
 `calendario-outubro-movimente.mp4`: logo adaptada para o cabeçalho a partir da imagem enviada, brilho dourado na palavra Outubro e pequenas pausas em outubro de cada ano. Mantém as fotos e o fundo roxo, em 10 segundos Full HD.
+
+## Quando tudo começou
+
+`quando-tudo-comecou.mp4`: novo vídeo de 10 segundos, horizontal Full HD, com a foto do grupo ao centro em aproximação gradual e a frase "quando tudo começou..." no alto. Mesmo fundo roxo, sem áudio. Composição editável `QuandoTudoComecou`.
