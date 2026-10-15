@@ -1,3 +1,4 @@
+import { PalavrasAnimadas } from "./PalavrasAnimadas";
 import { Video } from "@remotion/media";
 import {
   AbsoluteFill,
@@ -144,6 +145,7 @@ export const VideoDinamico = () => {
           background: "linear-gradient(90deg, #7b35bf, #ddb5ff)",
         }}
       />
+      <PalavrasAnimadas />
     </AbsoluteFill>
   );
 };

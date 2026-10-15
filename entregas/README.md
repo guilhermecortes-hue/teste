@@ -24,3 +24,7 @@ No GitHub, abra `calendario.mp4` e use **Download raw file** para baixar o víde
 ## Vídeo dinâmico LAB SIN
 
 `video-dinamico.mp4`: edição Full HD do vídeo enviado IMG_2253.mp4, com enquadramentos alternados, aproximações suaves, identificação animada LAB SIN e acentos gráficos roxos. Mantém a sequência e o áudio original, com aproximadamente 13,27 segundos. Projeto editável na composição VideoDinamico; mídia de trabalho em youtube/public/clipes/lab-sin.mp4.
+
+## Palavras animadas
+
+`video-palavras-animadas.mp4`: acrescenta destaques tipográficos para trechos da fala: Outubro Movimente, inteligência humana, tempos artificiais, insubstituíveis, vamos juntos e verdadeira essência. Letras grandes, entradas com deslocamento e escala, brilho e sublinhado animado. A fala permanece contínua. Os tempos dos destaques ficam em youtube/src/palavras.json, relativos ao áudio original.
