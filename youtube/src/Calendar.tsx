@@ -1,3 +1,4 @@
+import { MemoryFlashes } from "./MemoryFlashes";
 import {
   AbsoluteFill,
   Composition,
@@ -136,6 +137,7 @@ export const Calendar = () => {
         perspective: 1800,
       }}
     >
+      <MemoryFlashes />
       <div
         style={{
           position: "absolute",
