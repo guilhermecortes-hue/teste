@@ -20,3 +20,7 @@ No GitHub, abra `calendario.mp4` e use **Download raw file** para baixar o víde
 `quando-tudo-comecou.mp4`: novo vídeo de 10 segundos, horizontal Full HD, com a foto do grupo ao centro em aproximação gradual e a frase "quando tudo começou..." no alto. Mesmo fundo roxo, sem áudio. Composição editável `QuandoTudoComecou`.
 
 `quando-tudo-comecou-v2.mp4`: título corrigido para "Quando tudo começou..." e aproximação com aceleração, pequeno recuo e inclinação suave, seguida de avanço gradual. Mantém a foto inteira e 10 segundos Full HD.
+
+## Vídeo dinâmico LAB SIN
+
+`video-dinamico.mp4`: edição Full HD do vídeo enviado IMG_2253.mp4, com enquadramentos alternados, aproximações suaves, identificação animada LAB SIN e acentos gráficos roxos. Mantém a sequência e o áudio original, com aproximadamente 13,27 segundos. Projeto editável na composição VideoDinamico; mídia de trabalho em youtube/public/clipes/lab-sin.mp4.
