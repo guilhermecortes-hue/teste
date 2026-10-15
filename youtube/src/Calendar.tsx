@@ -2,6 +2,8 @@ import { MemoryFlashes } from "./MemoryFlashes";
 import {
   AbsoluteFill,
   Composition,
+  CanvasImage,
+  staticFile,
   Easing,
   interpolate,
   useCurrentFrame,
@@ -24,7 +26,13 @@ const months = [
 ];
 
 const CalendarPage = ({ offset }: { offset: number }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
   const monthIndex = (9 + offset) % 12;
+  const october = monthIndex === 9;
+  const glow = october
+    ? 0.65 + 0.35 * Math.sin((frame / fps) * Math.PI * 2) ** 2
+    : 0;
   const year = 2021 + Math.floor((9 + offset) / 12);
   const firstDay =
     (new Date(Date.UTC(year, monthIndex, 1)).getUTCDay() + 6) % 7;
@@ -41,6 +49,7 @@ const CalendarPage = ({ offset }: { offset: number }) => {
     >
       <div
         style={{
+          position: "relative",
           height: 225,
           background: "#351054",
           color: "#fff",
@@ -51,8 +60,52 @@ const CalendarPage = ({ offset }: { offset: number }) => {
           borderBottom: "5px solid #b989ee",
         }}
       >
-        <div style={{ fontSize: 86, fontWeight: 700, letterSpacing: -3 }}>
+        <div
+          style={{
+            fontSize: 76,
+            fontWeight: 700,
+            letterSpacing: -3,
+            position: "relative",
+            color: october ? "#fff0bb" : "#fff",
+            textShadow: october
+              ? `0 0 ${12 + glow * 12}px #ffde86, 0 0 ${25 + glow * 20}px #d88cff, 0 0 65px #bb65ff`
+              : undefined,
+          }}
+        >
+          {october ? (
+            <div
+              style={{
+                position: "absolute",
+                bottom: -12,
+                left: 4,
+                right: 0,
+                height: 3,
+                borderRadius: 4,
+                background: "#ffe7a0",
+                boxShadow: "0 0 14px #ffe7a0",
+                opacity: glow,
+              }}
+            />
+          ) : null}
           {months[monthIndex]}
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            left: 420,
+            top: 57,
+            width: 310,
+            height: 150,
+            padding: 9,
+            background: "white",
+            borderRadius: 12,
+            boxShadow: october ? "0 0 22px #d8a1ff88" : undefined,
+          }}
+        >
+          <CanvasImage
+            src={staticFile("marca/outubro-movimente.png")}
+            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          />
         </div>
         <div
           style={{
@@ -114,11 +167,16 @@ const CalendarPage = ({ offset }: { offset: number }) => {
 export const Calendar = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  // Hold the first month, turn all 60 pages, then hold October 2026.
-  const progress = interpolate(frame, [1.2 * fps, 8.2 * fps], [0, 60], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
+  // Each October gets a brief pause before the next year's pages turn.
+  const progress = interpolate(
+    frame,
+    [1.2, 1.5, 2.6, 2.9, 4, 4.3, 5.4, 5.7, 6.8, 7.1, 8.2].map((t) => t * fps),
+    [0, 0, 12, 12, 24, 24, 36, 36, 48, 48, 60],
+    {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    },
+  );
   const offset = Math.floor(progress);
   const turning = progress > 0 && progress < 60;
   const phase = progress % 1;
