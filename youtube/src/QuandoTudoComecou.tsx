@@ -2,6 +2,7 @@ import {
   AbsoluteFill,
   CanvasImage,
   Composition,
+  Easing,
   interpolate,
   staticFile,
   useCurrentFrame,
@@ -35,7 +36,7 @@ export const QuandoTudoComecou = () => {
           }),
         }}
       >
-        quando tudo começou...
+        Quando tudo começou...
       </h1>
       <div
         style={{
@@ -47,7 +48,33 @@ export const QuandoTudoComecou = () => {
           overflow: "hidden",
           border: "6px solid #f5e8ff",
           boxShadow: "0 30px 85px #2e0d6066",
-          scale: interpolate(frame, [0, durationInFrames - 1], [0.9, 1.08]),
+          scale: interpolate(
+            frame,
+            [0, 1.4 * fps, 2.2 * fps, 5.8 * fps, durationInFrames - 1],
+            [0.68, 1.02, 0.97, 1.035, 1.1],
+            {
+              easing: Easing.bezier(0.22, 1, 0.36, 1),
+              extrapolateRight: "clamp",
+            },
+          ),
+          rotate: interpolate(
+            frame,
+            [0, 1.4 * fps, 2.2 * fps, 5.8 * fps, durationInFrames - 1],
+            ["-4deg", "0.8deg", "-0.4deg", "0.3deg", "0deg"],
+            {
+              easing: Easing.bezier(0.22, 1, 0.36, 1),
+              extrapolateRight: "clamp",
+            },
+          ),
+          translate: interpolate(
+            frame,
+            [0, 1.4 * fps, 2.2 * fps, durationInFrames - 1],
+            ["0px 95px", "0px -10px", "0px 3px", "0px 0px"],
+            {
+              easing: Easing.bezier(0.22, 1, 0.36, 1),
+              extrapolateRight: "clamp",
+            },
+          ),
           transformOrigin: "50% 50%",
           opacity: interpolate(frame, [0, 0.6 * fps], [0, 1], {
             extrapolateRight: "clamp",
