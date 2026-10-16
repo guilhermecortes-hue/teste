@@ -123,6 +123,10 @@ export const ReconhecidoNacionalmente = () => {
           borderRadius: 24,
           overflow: "hidden",
           background: "#351054",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: 24,
           boxShadow: "0 25px 80px #2e0d6077, 0 0 40px #e8be661a",
           scale: interpolate(
             frame,
@@ -138,9 +142,29 @@ export const ReconhecidoNacionalmente = () => {
           }),
         }}
       >
+        {/* Preserva a marca da esquerda do asset anterior, ocultando a marca substituída. */}
+        <div style={{ width: 630, height: 500, flexShrink: 0, overflow: "hidden" }}>
+          <CanvasImage
+            src={staticFile("reconhecimento/logos-premios.png")}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "left center",
+              translate: "0 -25px",
+            }}
+          />
+        </div>
         <CanvasImage
-          src={staticFile("reconhecimento/logos-premios.png")}
-          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          src={staticFile("reconhecimento/digital-transformation-awards-2025.png")}
+          style={{
+            width: 398,
+            height: 398,
+            flexShrink: 0,
+            objectFit: "contain",
+            borderRadius: "50%",
+            backgroundColor: "#0096b1",
+          }}
         />
       </div>
       <h1
