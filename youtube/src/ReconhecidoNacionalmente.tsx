@@ -75,7 +75,7 @@ export const ReconhecidoNacionalmente = () => {
         overflow: "hidden",
       }}
     >
-      {/* Confetes ficam atrás da foto: lançamento do centro para as laterais. */}
+      {/* Confetes ficam atrás das logos: lançamento do centro para as laterais. */}
       <AbsoluteFill style={{ pointerEvents: "none" }}>
         {Array.from({ length: 140 }, (_, i) => {
           const start = (0.8 + Math.floor(i / 35) * 2) * fps;
@@ -114,11 +114,13 @@ export const ReconhecidoNacionalmente = () => {
       <div
         style={{
           position: "absolute",
-          top: 292,
-          width: 1040,
-          height: 693.33,
-          border: "6px solid #fff0cf",
-          borderRadius: 14,
+          top: 320,
+          width: 1120,
+          height: 600,
+          padding: 32,
+          boxSizing: "border-box",
+          border: "2px solid #e4b9ff55",
+          borderRadius: 24,
           overflow: "hidden",
           background: "#351054",
           boxShadow: "0 25px 80px #2e0d6077, 0 0 40px #e8be661a",
@@ -137,7 +139,7 @@ export const ReconhecidoNacionalmente = () => {
         }}
       >
         <CanvasImage
-          src={staticFile("reconhecimento/foto.jpg")}
+          src={staticFile("reconhecimento/logos-premios.png")}
           style={{ width: "100%", height: "100%", objectFit: "contain" }}
         />
       </div>
