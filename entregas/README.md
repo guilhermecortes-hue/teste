@@ -20,3 +20,9 @@ No GitHub, abra `calendario.mp4` e use **Download raw file** para baixar o víde
 `quando-tudo-comecou.mp4`: novo vídeo de 10 segundos, horizontal Full HD, com a foto do grupo ao centro em aproximação gradual e a frase "quando tudo começou..." no alto. Mesmo fundo roxo, sem áudio. Composição editável `QuandoTudoComecou`.
 
 `quando-tudo-comecou-v2.mp4`: título corrigido para "Quando tudo começou..." e aproximação com aceleração, pequeno recuo e inclinação suave, seguida de avanço gradual. Mantém a foto inteira e 10 segundos Full HD.
+
+## Reconhecido nacionalmente
+
+Composição editável `ReconhecidoNacionalmente`: vídeo de 10 segundos, Full HD (1920×1080), 30 fps, sem áudio. A foto ao centro se aproxima sobre o mesmo fundo roxo, com dois troféus nas laterais, confetes saindo por trás da imagem e o título "Reconhecido nacionalmente" no alto.
+
+Arquivos: [baixar o vídeo MP4](reconhecido-nacionalmente.mp4) e [ver a prévia](reconhecido-nacionalmente.png). No GitHub, abra o MP4 e use **Download raw file** para baixar.
