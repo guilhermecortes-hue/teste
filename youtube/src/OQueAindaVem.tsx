@@ -17,7 +17,8 @@ const cards = [1, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 15, 14].map(
 
 export const OQueAindaVem = () => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
+  const vertical = height > width;
   const start = Math.round(3.1333333333 * fps);
   const slot = Math.round((25 * fps - start) / cards.length);
   return (
@@ -45,10 +46,10 @@ export const OQueAindaVem = () => {
           key={i}
           style={{
             position: "absolute",
-            width: 1300 + i * 400,
-            height: 1300 + i * 400,
-            left: 960 - (1300 + i * 400) / 2,
-            top: 540 - (1300 + i * 400) / 2,
+            width: (vertical ? 1700 : 1300) + i * 400,
+            height: (vertical ? 1700 : 1300) + i * 400,
+            left: width / 2 - ((vertical ? 1700 : 1300) + i * 400) / 2,
+            top: height / 2 - ((vertical ? 1700 : 1300) + i * 400) / 2,
             border: "1px solid #ffffff12",
             borderRadius: "50%",
             scale: interpolate(frame, [0, 25 * fps], [0.95, 1.08], clamp),
@@ -72,17 +73,18 @@ export const OQueAindaVem = () => {
                 [0, 0.95, 0.75, 0],
                 clamp,
               ),
-              background:
-                "radial-gradient(ellipse 720px 650px at 50% 52%, #fff9daaa 0%, #ffe8a666 40%, #edb5ff44 65%, transparent 100%)",
+              background: vertical
+                ? "radial-gradient(ellipse 610px 900px at 50% 49%, #fff9daaa 0%, #ffe8a666 40%, #edb5ff44 65%, transparent 100%)"
+                : "radial-gradient(ellipse 720px 650px at 50% 52%, #fff9daaa 0%, #ffe8a666 40%, #edb5ff44 65%, transparent 100%)",
             }}
           >
             <div
               style={{
                 position: "absolute",
-                left: 510,
-                top: 85,
-                width: 900,
-                height: 920,
+                left: vertical ? 55 : 510,
+                top: vertical ? 260 : 85,
+                width: vertical ? 970 : 900,
+                height: vertical ? 1350 : 920,
                 borderRadius: "50%",
                 background:
                   "radial-gradient(ellipse at center, transparent 35%, #fff3d533 55%, transparent 72%)",
@@ -94,10 +96,14 @@ export const OQueAindaVem = () => {
                 key={sparkle}
                 style={{
                   position: "absolute",
-                  left: [530, 1370, 470, 1430][sparkle],
-                  top: [230, 730, 770, 290][sparkle],
-                  width: 34,
-                  height: 34,
+                  left: (vertical
+                    ? [55, 980, 35, 1000]
+                    : [530, 1370, 470, 1430])[sparkle],
+                  top: (vertical
+                    ? [450, 1180, 1260, 560]
+                    : [230, 730, 770, 290])[sparkle],
+                  width: vertical ? 28 : 34,
+                  height: vertical ? 28 : 34,
                   background: "#fff6ce",
                   clipPath:
                     "polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)",
@@ -133,13 +139,23 @@ export const OQueAindaVem = () => {
           style={{
             textAlign: "center",
             color: "#fff6ff",
-            fontSize: 100,
+            fontSize: vertical ? 94 : 100,
+            maxWidth: vertical ? 880 : undefined,
+            lineHeight: vertical ? 1.18 : undefined,
             fontWeight: 700,
             letterSpacing: -3,
             textShadow: "0 8px 36px #35105466",
           }}
         >
-          O que ainda vem por ai....
+          {vertical ? (
+            <>
+              O que ainda vem
+              <br />
+              por ai....
+            </>
+          ) : (
+            "O que ainda vem por ai...."
+          )}
           <div
             style={{
               width: 180,
@@ -154,11 +170,12 @@ export const OQueAindaVem = () => {
       <div
         style={{
           position: "absolute",
-          top: 34,
-          width: "100%",
+          top: vertical ? 230 : 34,
+          left: vertical ? 100 : 0,
+          width: vertical ? 880 : "100%",
           textAlign: "center",
           color: "#fff6ff",
-          fontSize: 34,
+          fontSize: vertical ? 48 : 34,
           fontWeight: 700,
           letterSpacing: 1,
           opacity: interpolate(frame, [2.8 * fps, 3.3 * fps], [0, 1], clamp),
@@ -177,10 +194,10 @@ export const OQueAindaVem = () => {
             key={src}
             style={{
               position: "absolute",
-              left: 620,
-              top: 110,
-              width: 680,
-              height: 850,
+              left: vertical ? 100 : 620,
+              top: vertical ? 380 : 110,
+              width: vertical ? 880 : 680,
+              height: vertical ? 1100 : 850,
               borderRadius: 16,
               overflow: "hidden",
               boxShadow: "0 24px 65px #260a5466",
@@ -222,7 +239,7 @@ export const OQueAindaVem = () => {
       <div
         style={{
           position: "absolute",
-          bottom: 43,
+          bottom: vertical ? 340 : 43,
           width: "100%",
           display: "flex",
           justifyContent: "center",
@@ -258,6 +275,17 @@ export const OQueAindaVemComposition = () => (
     component={OQueAindaVem}
     width={1920}
     height={1080}
+    fps={30}
+    durationInFrames={750}
+  />
+);
+
+export const OQueAindaVemVerticalComposition = () => (
+  <Composition
+    id="OQueAindaVemVertical"
+    component={OQueAindaVem}
+    width={1080}
+    height={1920}
     fps={30}
     durationInFrames={750}
   />
