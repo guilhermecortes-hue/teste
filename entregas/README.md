@@ -29,7 +29,7 @@ Arquivos: [baixar o vídeo MP4](reconhecido-nacionalmente.mp4) e [ver a prévia]
 
 ## O que ainda vem por ai....
 
-Vídeo de 25 segundos, Full HD (1920×1080), 30 fps, sem áudio. A abertura traz “O que ainda vem por ai....” sobre o mesmo fundo roxo dos vídeos anteriores. Os 16 cards enviados no ZIP aparecem na ordem numérica dos arquivos, com entrada lateral, ampliação e destaque individual ao centro, preservando as artes inteiras. Composição editável: `OQueAindaVem`, em `youtube/src/OQueAindaVem.tsx`.
+Vídeo de 25 segundos, Full HD (1920×1080), 30 fps, sem áudio. A abertura traz “O que ainda vem por ai....” sobre o mesmo fundo roxo dos vídeos anteriores. Os 14 cards selecionados aparecem na ordem numérica dos arquivos, com entrada lateral, ampliação e destaque individual ao centro, preservando as artes inteiras. As imagens 2 e 16 foram excluídas da sequência. Um halo luminoso dourado e lilás, com pequenos brilhos, ilumina o fundo enquanto cada card está em evidência. Composição editável: `OQueAindaVem`, em `youtube/src/OQueAindaVem.tsx`.
 
 - [Baixar o vídeo MP4](o-que-ainda-vem.mp4)
 - [Ver a prévia](o-que-ainda-vem.png)

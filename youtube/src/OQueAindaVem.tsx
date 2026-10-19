@@ -10,9 +10,8 @@ import {
 } from "remotion";
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
-const cards = Array.from(
-  { length: 16 },
-  (_, i) => `proximos-cards/${String(i + 1).padStart(2, "0")}.png`,
+const cards = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
+  (number) => `proximos-cards/${String(number).padStart(2, "0")}.png`,
 );
 
 export const OQueAindaVem = () => {
@@ -44,6 +43,64 @@ export const OQueAindaVem = () => {
           }}
         />
       ))}
+      {cards.map((src, i) => {
+        const local =
+          i === cards.length - 1
+            ? Math.min(frame - start - i * slot, slot - 8)
+            : frame - start - i * slot;
+        if (local < 0 || local > slot) return null;
+        return (
+          <AbsoluteFill
+            key={`glow-${src}`}
+            style={{
+              pointerEvents: "none",
+              opacity: interpolate(
+                local,
+                [0, 8, slot - 8, slot],
+                [0, 0.95, 0.75, 0],
+                clamp,
+              ),
+              background:
+                "radial-gradient(ellipse 720px 650px at 50% 52%, #fff9daaa 0%, #ffe8a666 40%, #edb5ff44 65%, transparent 100%)",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                left: 510,
+                top: 85,
+                width: 900,
+                height: 920,
+                borderRadius: "50%",
+                background:
+                  "radial-gradient(ellipse at center, transparent 35%, #fff3d533 55%, transparent 72%)",
+                scale: interpolate(local, [0, slot], [0.85, 1.15], clamp),
+              }}
+            />
+            {[0, 1, 2, 3].map((sparkle) => (
+              <div
+                key={sparkle}
+                style={{
+                  position: "absolute",
+                  left: [530, 1370, 470, 1430][sparkle],
+                  top: [230, 730, 770, 290][sparkle],
+                  width: 34,
+                  height: 34,
+                  background: "#fff6ce",
+                  clipPath:
+                    "polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%)",
+                  scale: interpolate(
+                    local,
+                    [0, 10, slot - 8, slot],
+                    [0.2, 1.1, 0.7, 0.2],
+                    clamp,
+                  ),
+                }}
+              />
+            ))}
+          </AbsoluteFill>
+        );
+      })}
       <div
         style={{
           position: "absolute",
