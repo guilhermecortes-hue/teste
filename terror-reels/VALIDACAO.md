@@ -23,3 +23,13 @@ Arquivos de entrega: `../entregas/terror-reels.mp4` e `../entregas/terror-reels-
 - `npm run lint` e `npm run build` aprovados; cinco imagens de cena e capa renderizadas e inspecionadas após as alterações.
 - Exportação revisada concluída em H.264/AAC, 1080×1920, 30 fps, 1.021 frames e 34,048 s de contêiner. Decodificação completa por FFmpeg sem erros.
 - Hash SHA-256 do áudio decodificado comparado à entrega anterior: idêntico, preservando narração, trilha, efeitos, sincronização e a medição de loudness acima.
+
+## Revisão de leitura e convite final
+
+- As caixas individuais por palavra foram substituídas por um painel estável de duas linhas, fonte 52 px, entrelinha de 1,45 e espaços tipográficos reais com 10 px adicionais. A palavra ativa muda apenas de cor.
+- A legenda mantém a pontuação do roteiro, permanece até o fim da cena e agrupa sobras curtas com a página anterior. São 13 páginas, em vez das 28 anteriores; a menor permanência é de 1,609 s, eliminando flashes de palavras isoladas de cerca de 0,35 s.
+- A maior linha medida com a fonte local e pontuação tem 711,98 px para 790 px úteis. A altura das duas linhas cabe no painel sem cortes.
+- Os cartazes do leque foram reduzidos para 320×480 e reposicionados. Foi calculado o limite inferior de todos os frames da abertura e do encerramento: máximo y=1177,7. A faixa do convite inicia em y=1320 e termina em y=1420; a legenda inicia em y=1470. Não há sobreposição entre cartazes, convite e legendas.
+- Conferidas imagens da abertura, Halloween, encerramento e últimas palavras. Um quadro do encerramento foi extraído do próprio MP4 exportado e inspecionado, confirmando as correções no arquivo final.
+- Lint, TypeScript, build e render aprovados. Arquivo revisado: H.264/AAC, 1080×1920, 30 fps, 1021 frames e 34,048 s, decodificado integralmente por FFmpeg sem erros.
+- O áudio decodificado permanece idêntico ao da entrega anterior por comparação SHA-256.

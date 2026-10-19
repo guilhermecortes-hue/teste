@@ -45,8 +45,9 @@ Mesmo vídeo em **1080×1920 (9:16)**, 25 segundos e 30 fps, com os mesmos 13 ca
 
 ## Arquivo do Medo — projeto de Reels de terror
 
-Vídeo vertical **1080×1920, 30 fps, 34 segundos**, com narração brasileira, legendas sincronizadas palavra a palavra, trilha original de suspense, efeitos e cartazes de divulgação de Psicose (1960), Halloween (1978) e O Exorcista (1973), pesquisados na internet e documentados em [`FONTES.md`](../terror-reels/FONTES.md). A revisão aumentou o espaço entre palavras e linhas das legendas. Cinco cenas: gancho, Psicose, Halloween, O Exorcista e convite para comentar. Projeto editável em [`../terror-reels/`](../terror-reels/README.md).
+Vídeo vertical **1080×1920, 30 fps, 34 segundos**, com narração brasileira, legendas sincronizadas, trilha original de suspense, efeitos e cartazes de divulgação de Psicose (1960), Halloween (1978) e O Exorcista (1973), pesquisados na internet e documentados em [`FONTES.md`](../terror-reels/FONTES.md). As legendas usam frases estáveis em duas linhas com pontuação e espaços reais, evitando trocas rápidas de palavras isoladas. “COMENTA 1, 2 OU 3” aparece em uma faixa separada abaixo dos cartazes. Cinco cenas: gancho, Psicose, Halloween, O Exorcista e convite para comentar. Projeto editável em [`../terror-reels/`](../terror-reels/README.md).
 
 - [Baixar o vídeo MP4](terror-reels.mp4)
 - [Ver a capa](terror-reels-capa.png)
+- [Conferir o encerramento corrigido](terror-reels-final.png)
 - [Ver resultados da validação](../terror-reels/VALIDACAO.md)

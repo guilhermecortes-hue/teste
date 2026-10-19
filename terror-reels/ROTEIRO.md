@@ -10,7 +10,7 @@ Duração alvo: 30–40 s. Os tempos abaixo são indicativos; o código calcula 
 | 3 · ~21–30s | Em O Exorcista, o quarto foi refrigerado de verdade para a respiração dos atores aparecer na câmera. | Cartaz clássico de O Exorcista (1973), com o padre Merrin na rua. “O FRIO ERA REAL.” | Whoosh, impacto discreto, drone. |
 | CTA · ~30–36s | Qual desses te enganou? Comenta um, dois ou três. Agora assiste de novo. | Volta ao leque. “QUAL TE ENGANOU?” e “COMENTA 1, 2 OU 3”. | Encerramento curto e fade da trilha. |
 
-Legendas sincronizadas pela voz: blocos de até três palavras, palavra ativa com fundo verde ácido; nunca usar os tempos estimados da prévia no render final.
+Legendas sincronizadas pela voz: frases em duas linhas dentro de um painel fixo, com pontuação e espaços reais entre palavras. A palavra ativa fica verde ácido, sem caixa individual. Páginas de seis palavras absorvem sobras curtas para evitar trocas que piscam. Nunca usar os tempos estimados da prévia no render final. No encerramento, o convite para comentar fica em uma faixa própria, sem sobreposição aos cartazes.
 
 Legenda sugerida para a publicação:
 Três clássicos, três truques que mudam o jeito de assistir. Qual bastidor mais te surpreendeu: 1, 2 ou 3?

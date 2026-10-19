@@ -46,7 +46,7 @@ A duração inicial de prévia é aproximadamente 29 segundos. A versão narrada
 ## Editar
 Altere as falas em `SCENES` de `scripts/prepare.py`. Ao trocar uma fala, remova APENAS o MP3 e JSON correspondentes em `public/audio/` para invalidar o cache e execute novamente a preparação. Para trocar voz, altere `pt-BR-AntonioNeural`; invalide os cinco pares MP3/JSON. Edite títulos e rótulos no mesmo array.
 
-O vídeo atual usa `psycho.jpg`, `halloween.jpg` e `exorcist.jpg` em `public/posters/`. A preparação de mídia pode recriar os SVGs antigos, mas não altera esses JPEGs e não os substitui no render. As legendas têm espaçamento explícito de 18 px entre palavras e 14 px entre linhas, com preenchimento interno em cada destaque.
+O vídeo atual usa `psycho.jpg`, `halloween.jpg` e `exorcist.jpg` em `public/posters/`. A preparação de mídia pode recriar os SVGs antigos, mas não altera esses JPEGs e não os substitui no render. As legendas aparecem em um painel fixo com frases em duas linhas, espaços tipográficos reais e espaçamento adicional de 10 px. Páginas de seis palavras absorvem sobras de uma ou duas palavras, evitando trocas rápidas isoladas. A palavra em fala muda apenas de cor, sem caixas que alterem a leitura. O convite para comentar fica em uma faixa própria abaixo dos cartazes e acima das legendas.
 
 A trilha utiliza drone grave, pulso a 96 BPM e motivo de sintetizador original. A mixagem deixa o fundo a 23% do volume e os impactos a 40%. Confira o volume percebido no MP4 antes de publicar.
 

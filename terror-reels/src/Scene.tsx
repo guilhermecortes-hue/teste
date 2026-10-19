@@ -126,7 +126,7 @@ export const Scene: React.FC<{ index: number }> = ({ index }) => {
         <div
           style={{
             position: "absolute",
-            top: 630,
+            top: 590,
             left: 95,
             width: 800,
             height: 680,
@@ -139,34 +139,44 @@ export const Scene: React.FC<{ index: number }> = ({ index }) => {
               premountFor={fps}
               style={{
                 position: "absolute",
-                width: 350,
-                height: 525,
+                width: 320,
+                height: 480,
                 objectFit: "contain",
-                left: i * 220,
-                top: i === 1 ? 0 : 90,
+                left: i * 225,
+                top: i === 1 ? 0 : 70,
                 rotate: `${(i - 1) * 13 + Math.sin(f / 30) * 2}deg`,
                 scale: 1 + Math.sin(f / 35 + i) * 0.02,
                 boxShadow: "0 24px 80px #000",
               }}
             />
           ))}
-          <div
-            style={{
-              position: "absolute",
-              top: 560,
-              left: 0,
-              right: 0,
-              textAlign: "center",
-              fontSize: 54,
-              fontWeight: 900,
-              color: accent,
-            }}
-          >
-            {index === 0 ? "VOCÊ PERCEBEU?" : "COMENTA 1, 2 OU 3"}
-          </div>
         </div>
       )}
-      <Captions captions={s.captions} />
+      {!s.poster && (
+        <div
+          style={{
+            position: "absolute",
+            top: 1320,
+            left: 90,
+            right: 150,
+            height: 100,
+            boxSizing: "border-box",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 16,
+            border: `2px solid ${accent}`,
+            background: "#101720",
+            color: accent,
+            fontSize: 50,
+            fontWeight: 900,
+            textAlign: "center",
+          }}
+        >
+          {index === 0 ? "VOCÊ PERCEBEU?" : "COMENTA 1, 2 OU 3"}
+        </div>
+      )}
+      <Captions captions={s.captions} text={s.text} />
       <div
         style={{
           position: "absolute",
