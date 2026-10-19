@@ -1,16 +1,16 @@
-# Validação no ambiente cloud
+# Validação da entrega final
 
-- Dependências Node instaladas com `npm ci`; ambiente Python `.venv` e `edge-tts==7.3.1` instalados.
+- Instalação com `npm ci` e dependências Python em `.venv` concluída.
 - `npm run lint`, `npm run check` e `npm run build`: aprovados.
-- `scripts/prepare.py`: compilação Python aprovada; proxy HTTPS do ambiente configurado explicitamente para Edge TTS.
-- Studio iniciado na porta 3001 e resposta HTML verificada.
-- Chromium do sistema enumerou a composição principal e as cinco cenas em 1080×1920, 30 fps.
-- Renderizadas e inspecionadas imagens das cinco cenas e a capa. As imagens ainda exibem `PRÉVIA VISUAL · NARRAÇÃO A GERAR`.
-- Ajustado o componente de legendas para manter o bloco visível entre palavras, evitando piscadas nos intervalos de metadados do TTS.
-- `scripts/check.mjs` recusou corretamente a timeline `preview:true` sem narração. Essa recusa é esperada e protege a exportação final.
+- Studio iniciado na porta 3001 e resposta HTML verificada; Chromium do sistema configurado para o render.
+- Narração das cinco cenas gerada com `pt-BR-AntonioNeural` via Edge TTS. O proxy HTTPS e os certificados do sistema são usados com `truststore==0.10.5`; verificação TLS mantida ativa.
+- Timeline `preview:false`: 1.021 frames a 30 fps, 34,033 segundos de vídeo. Os 76 tempos de palavras correspondem integralmente às cinco falas e estão ordenados, sem sobreposição e dentro dos limites de áudio/cena.
+- Os cinco MP3s decodificam sem erros; nenhuma fala ou palavra truncada identificada na conferência dos tempos. Os intervalos após as falas acomodam o respiro e o efeito de transição.
+- Imagens das cinco cenas e capa renderizadas com a timeline real e inspecionadas. Sem a marca de prévia; títulos, cartazes e legendas enquadrados em 1080×1920.
+- `scripts/check.mjs`: aprovado com vozes e legendas presentes.
+- `npm run render -- --concurrency=2 --x264-preset=fast` e `npm run cover`: concluídos.
+- MP4 confirmado por ffprobe: vídeo H.264, 1080×1920, 30 fps, 1.021 frames; áudio AAC, estéreo, 48 kHz; duração do contêiner 34,048 s.
+- FFmpeg decodificou o arquivo completo, incluindo áudio e vídeo, sem erros.
+- Mistura medida: -17,85 LUFS integrados, pico verdadeiro -3,45 dBTP e faixa de loudness 2,5 LU, sem saturação detectada. Não foi aplicada normalização adicional.
 
-## Pendente
-
-O proxy de saída do ambiente recusou o acesso a `speech.platform.bing.com` com HTTP 403 antes da conexão com o serviço. O domínio foi acrescentado ao rascunho de rede do ambiente; salvar o rascunho não aplica a regra à máquina atual. É necessário salvar e publicar a configuração pelo produto e retomar a preparação.
-
-Nenhum MP4 final foi produzido ou validado, e nenhuma mixagem final narrada foi ouvida. Após a liberação, executar `.venv/bin/python scripts/prepare.py`, confirmar `preview:false`, gerar novamente as imagens com a timeline real e então executar `npm run render -- --concurrency=2 --x264-preset=fast` e `npm run cover`. Validar as vozes, legendas, duração e mistura do MP4 antes da entrega final.
+Arquivos de entrega: `../entregas/terror-reels.mp4` e `../entregas/terror-reels-capa.png`. Os áudios e metadados gerados permanecem no projeto para reproduzir a exportação sem nova chamada ao serviço de voz.

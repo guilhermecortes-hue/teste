@@ -37,9 +37,11 @@ Saídas: `out/terror-reels.mp4` (H.264/AAC, 1080×1920, 30fps) e `out/capa.png`.
 - `ROTEIRO.md`, `FONTES.md`, `PROMPT-CODEX.md`.
 
 ## Estado da entrega
-Os WAVs, SVGs e a fonte já acompanham o pacote. A timeline incluída é uma **prévia visual sem voz**, claramente identificada na tela. A instalação, o Studio e as imagens das cinco cenas foram validados no ambiente cloud. A narração está pendente porque o proxy de rede recusa o acesso a `speech.platform.bing.com` com HTTP 403. O domínio foi acrescentado ao rascunho de configuração; a liberação precisa ser salva e publicada no produto. Depois execute `npm run prepare:media` para criar os MP3 e os tempos reais. `npm run render` recusa uma timeline de prévia: não há exportação final silenciosa por engano.
+Vídeo final gerado e validado: **34 segundos, 1080×1920, 30 fps, H.264/AAC**, com narração brasileira, legendas sincronizadas, trilha e efeitos. O MP4 e a capa estão em [`../entregas/`](../entregas/README.md). A timeline está em `preview:false`; os cinco MP3 e seus tempos reais de palavras acompanham o projeto, permitindo renderizar novamente sem gerar voz pela rede. `npm run render` continua recusando timelines de prévia sem narração.
 
-A duração inicial de prévia é aproximadamente 29 segundos. A versão narrada é dimensionada pela duração real de cada MP3, normalmente cerca de 30–40 segundos, sem cortar falas ou acelerar artificialmente o áudio.
+A geração de novas falas usa `speech.platform.bing.com`, o proxy HTTPS do ambiente e os certificados confiáveis do sistema por meio de `truststore`, mantendo a verificação TLS ativa. Os bloqueios iniciais de rede e confiança foram resolvidos. Para exportar nesta máquina, use `npm run render -- --concurrency=2 --x264-preset=fast`.
+
+A duração inicial de prévia é aproximadamente 29 segundos. A versão narrada atual tem 34 segundos, dimensionados pela duração real de cada MP3, sem cortar falas ou acelerar artificialmente o áudio.
 
 ## Editar
 Altere as falas em `SCENES` de `scripts/prepare.py`. Ao trocar uma fala, remova APENAS o MP3 e JSON correspondentes em `public/audio/` para invalidar o cache e execute novamente a preparação. Para trocar voz, altere `pt-BR-AntonioNeural`; invalide os cinco pares MP3/JSON. Edite títulos e rótulos no mesmo array.

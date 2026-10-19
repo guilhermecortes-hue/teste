@@ -44,6 +44,8 @@ async def voice(s,preview):
  if preview:
   words=text.split();dur=len(words)/2.8
   return dur,[{'text':' '+w,'startMs':i*dur/len(words)*1000,'endMs':(i+1)*dur/len(words)*1000,'timestampMs':None,'confidence':None} for i,w in enumerate(words)]
+ import truststore
+ truststore.inject_into_ssl()
  import edge_tts
  if not path.exists() or not meta.exists():
   captions=[]

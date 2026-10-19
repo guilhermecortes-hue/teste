@@ -1,7 +1,7 @@
 {
   "fps": 30,
-  "totalFrames": 878,
-  "preview": true,
+  "totalFrames": 1021,
+  "preview": false,
   "scenes": [
     {
       "id": "hook",
@@ -10,76 +10,76 @@
       "label": "TRÊS SEGREDOS DE BASTIDOR",
       "poster": null,
       "start": 0,
-      "frames": 120,
-      "voice": null,
+      "frames": 158,
+      "voice": "audio/hook.mp3",
       "captions": [
         {
           "text": " O",
-          "startMs": 0.0,
-          "endMs": 357.14285714285717,
+          "startMs": 96.291,
+          "endMs": 212.041,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " terror",
-          "startMs": 357.14285714285717,
-          "endMs": 714.2857142857143,
+          "startMs": 223.625,
+          "endMs": 628.708,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " te",
-          "startMs": 714.2857142857143,
-          "endMs": 1071.4285714285716,
+          "startMs": 640.291,
+          "endMs": 732.874,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " enganou.",
-          "startMs": 1071.4285714285716,
-          "endMs": 1428.5714285714287,
+          "text": " enganou",
+          "startMs": 744.458,
+          "endMs": 1172.708,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " E",
-          "startMs": 1428.5714285714287,
-          "endMs": 1785.7142857142858,
+          "startMs": 1967.583,
+          "endMs": 2106.458,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " estes",
-          "startMs": 1785.7142857142858,
-          "endMs": 2142.857142857143,
+          "startMs": 2118.041,
+          "endMs": 2499.999,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " três",
-          "startMs": 2142.857142857143,
-          "endMs": 2500.0,
+          "startMs": 2511.583,
+          "endMs": 2719.916,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " bastidores",
-          "startMs": 2500.0,
-          "endMs": 2857.1428571428573,
+          "startMs": 2731.5,
+          "endMs": 3333.333,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " provam",
-          "startMs": 2857.1428571428573,
-          "endMs": 3214.285714285714,
+          "startMs": 3344.916,
+          "endMs": 3715.291,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " isso.",
-          "startMs": 3214.285714285714,
-          "endMs": 3571.4285714285716,
+          "text": " isso",
+          "startMs": 3726.833,
+          "endMs": 4039.333,
           "timestampMs": null,
           "confidence": null
         }
@@ -91,126 +91,126 @@
       "title": "ERA\nCHOCOLATE.",
       "label": "PSICOSE · 1960",
       "poster": "psycho",
-      "start": 120,
-      "frames": 195,
-      "voice": null,
+      "start": 158,
+      "frames": 226,
+      "voice": "audio/psycho.mp3",
       "captions": [
         {
           "text": " Em",
-          "startMs": 0.0,
-          "endMs": 357.1428571428572,
+          "startMs": 96.291,
+          "endMs": 246.749,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " Psicose,",
-          "startMs": 357.1428571428572,
-          "endMs": 714.2857142857144,
+          "text": " Psicose",
+          "startMs": 258.333,
+          "endMs": 837.041,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " o",
-          "startMs": 714.2857142857144,
-          "endMs": 1071.4285714285713,
+          "startMs": 1103.25,
+          "endMs": 1172.708,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " sangue",
-          "startMs": 1071.4285714285713,
-          "endMs": 1428.571428571429,
+          "startMs": 1184.25,
+          "endMs": 1508.333,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " do",
-          "startMs": 1428.571428571429,
-          "endMs": 1785.714285714286,
+          "startMs": 1519.916,
+          "endMs": 1600.916,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " chuveiro",
-          "startMs": 1785.714285714286,
-          "endMs": 2142.8571428571427,
+          "startMs": 1612.5,
+          "endMs": 2040.75,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " era",
-          "startMs": 2142.8571428571427,
-          "endMs": 2500.0000000000005,
+          "startMs": 2052.333,
+          "endMs": 2225.958,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " calda",
-          "startMs": 2500.0000000000005,
-          "endMs": 2857.142857142858,
+          "startMs": 2237.5,
+          "endMs": 2538.416,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " de",
-          "startMs": 2857.142857142858,
-          "endMs": 3214.285714285714,
+          "startMs": 2550.0,
+          "endMs": 2631.0,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " chocolate.",
-          "startMs": 3214.285714285714,
-          "endMs": 3571.428571428572,
+          "text": " chocolate",
+          "startMs": 2642.583,
+          "endMs": 3279.166,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " No",
-          "startMs": 3571.428571428572,
-          "endMs": 3928.571428571429,
+          "startMs": 4074.083,
+          "endMs": 4259.249,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " preto",
-          "startMs": 3928.571428571429,
-          "endMs": 4285.714285714285,
+          "startMs": 4270.833,
+          "endMs": 4594.916,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " e",
-          "startMs": 4285.714285714285,
-          "endMs": 4642.857142857143,
+          "startMs": 4606.5,
+          "endMs": 4629.666,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " branco,",
-          "startMs": 4642.857142857143,
-          "endMs": 5000.000000000001,
+          "text": " branco",
+          "startMs": 4641.208,
+          "endMs": 5046.291,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " o",
-          "startMs": 5000.000000000001,
-          "endMs": 5357.142857142858,
+          "startMs": 5254.625,
+          "endMs": 5347.208,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " truque",
-          "startMs": 5357.142857142858,
-          "endMs": 5714.285714285716,
+          "startMs": 5358.791,
+          "endMs": 5636.582,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " funcionava.",
-          "startMs": 5714.285714285716,
-          "endMs": 6071.4285714285725,
+          "text": " funcionava",
+          "startMs": 5648.166,
+          "endMs": 6284.749,
           "timestampMs": null,
           "confidence": null
         }
@@ -222,140 +222,140 @@
       "title": "VEIO DE\nSTAR TREK.",
       "label": "HALLOWEEN · 1978",
       "poster": "halloween",
-      "start": 315,
-      "frames": 216,
-      "voice": null,
+      "start": 384,
+      "frames": 218,
+      "voice": "audio/halloween.mp3",
       "captions": [
         {
           "text": " A",
-          "startMs": 0.0,
-          "endMs": 357.1428571428572,
+          "startMs": 96.291,
+          "endMs": 188.874,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " máscara",
-          "startMs": 357.1428571428572,
-          "endMs": 714.2857142857144,
+          "startMs": 200.458,
+          "endMs": 674.999,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " de",
-          "startMs": 714.2857142857144,
-          "endMs": 1071.4285714285716,
+          "startMs": 686.583,
+          "endMs": 779.166,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " Michael",
-          "startMs": 1071.4285714285716,
-          "endMs": 1428.571428571429,
+          "startMs": 790.75,
+          "endMs": 1149.541,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " Myers",
-          "startMs": 1428.571428571429,
-          "endMs": 1785.7142857142858,
+          "startMs": 1161.125,
+          "endMs": 1496.791,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " era",
-          "startMs": 1785.7142857142858,
-          "endMs": 2142.857142857143,
+          "startMs": 1508.333,
+          "endMs": 1693.499,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " uma",
-          "startMs": 2142.857142857143,
-          "endMs": 2500.0000000000005,
+          "startMs": 1705.083,
+          "endMs": 1809.249,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " máscara",
-          "startMs": 2500.0000000000005,
-          "endMs": 2857.142857142858,
+          "startMs": 1820.833,
+          "endMs": 2249.083,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " do",
-          "startMs": 2857.142857142858,
-          "endMs": 3214.285714285714,
+          "startMs": 2260.666,
+          "endMs": 2353.249,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " Capitão",
-          "startMs": 3214.285714285714,
-          "endMs": 3571.4285714285716,
+          "startMs": 2364.833,
+          "endMs": 2758.333,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " Kirk,",
-          "startMs": 3571.4285714285716,
-          "endMs": 3928.5714285714294,
+          "text": " Kirk",
+          "startMs": 2769.916,
+          "endMs": 3117.124,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " de",
-          "startMs": 3928.5714285714294,
-          "endMs": 4285.714285714286,
+          "startMs": 3325.458,
+          "endMs": 3406.458,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " Star",
-          "startMs": 4285.714285714286,
-          "endMs": 4642.857142857143,
+          "startMs": 3418.041,
+          "endMs": 3695.832,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " Trek,",
-          "startMs": 4642.857142857143,
-          "endMs": 5000.000000000001,
+          "text": " Trek",
+          "startMs": 3707.416,
+          "endMs": 4054.624,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " modificada",
-          "startMs": 5000.000000000001,
-          "endMs": 5357.142857142858,
+          "startMs": 4320.833,
+          "endMs": 4992.124,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " e",
-          "startMs": 5357.142857142858,
-          "endMs": 5714.285714285716,
+          "startMs": 5003.708,
+          "endMs": 5061.583,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " pintada",
-          "startMs": 5714.285714285716,
-          "endMs": 6071.4285714285725,
+          "startMs": 5073.166,
+          "endMs": 5547.707,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " de",
-          "startMs": 6071.4285714285725,
-          "endMs": 6428.571428571428,
+          "startMs": 5559.25,
+          "endMs": 5651.833,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " branco.",
-          "startMs": 6428.571428571428,
-          "endMs": 6785.714285714286,
+          "text": " branco",
+          "startMs": 5663.416,
+          "endMs": 6022.207,
           "timestampMs": null,
           "confidence": null
         }
@@ -367,126 +367,126 @@
       "title": "O FRIO\nERA REAL.",
       "label": "O EXORCISTA · 1973",
       "poster": "exorcist",
-      "start": 531,
-      "frames": 195,
-      "voice": null,
+      "start": 602,
+      "frames": 203,
+      "voice": "audio/exorcist.mp3",
       "captions": [
         {
           "text": " Em",
-          "startMs": 0.0,
-          "endMs": 357.1428571428572,
+          "startMs": 96.291,
+          "endMs": 235.166,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " O",
-          "startMs": 357.1428571428572,
-          "endMs": 714.2857142857144,
+          "startMs": 246.75,
+          "endMs": 304.625,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " Exorcista,",
-          "startMs": 714.2857142857144,
-          "endMs": 1071.4285714285713,
+          "text": " Exorcista",
+          "startMs": 316.208,
+          "endMs": 906.499,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " o",
-          "startMs": 1071.4285714285713,
-          "endMs": 1428.571428571429,
+          "startMs": 1161.125,
+          "endMs": 1265.291,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " quarto",
-          "startMs": 1428.571428571429,
-          "endMs": 1785.714285714286,
+          "startMs": 1276.833,
+          "endMs": 1681.916,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " foi",
-          "startMs": 1785.714285714286,
-          "endMs": 2142.8571428571427,
+          "startMs": 1693.5,
+          "endMs": 1809.25,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " refrigerado",
-          "startMs": 2142.8571428571427,
-          "endMs": 2500.0000000000005,
+          "startMs": 1820.833,
+          "endMs": 2480.541,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " de",
-          "startMs": 2500.0000000000005,
-          "endMs": 2857.142857142858,
+          "startMs": 2492.125,
+          "endMs": 2561.583,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " verdade",
-          "startMs": 2857.142857142858,
-          "endMs": 3214.285714285714,
+          "startMs": 2573.166,
+          "endMs": 3070.832,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " para",
-          "startMs": 3214.285714285714,
-          "endMs": 3571.428571428572,
+          "startMs": 3082.416,
+          "endMs": 3221.291,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " a",
-          "startMs": 3571.428571428572,
-          "endMs": 3928.571428571429,
+          "startMs": 3232.875,
+          "endMs": 3256.041,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " respiração",
-          "startMs": 3928.571428571429,
-          "endMs": 4285.714285714285,
+          "startMs": 3267.583,
+          "endMs": 3869.416,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " dos",
-          "startMs": 4285.714285714285,
-          "endMs": 4642.857142857143,
+          "startMs": 3881.0,
+          "endMs": 3962.0,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " atores",
-          "startMs": 4642.857142857143,
-          "endMs": 5000.000000000001,
+          "startMs": 3973.625,
+          "endMs": 4378.708,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " aparecer",
-          "startMs": 5000.000000000001,
-          "endMs": 5357.142857142858,
+          "startMs": 4390.291,
+          "endMs": 4945.832,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " na",
-          "startMs": 5357.142857142858,
-          "endMs": 5714.285714285716,
+          "startMs": 4957.416,
+          "endMs": 5084.749,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " câmera.",
-          "startMs": 5714.285714285716,
-          "endMs": 6071.4285714285725,
+          "text": " câmera",
+          "startMs": 5096.291,
+          "endMs": 5524.541,
           "timestampMs": null,
           "confidence": null
         }
@@ -498,98 +498,98 @@
       "title": "QUAL TE\nENGANOU?",
       "label": "1 · CHOCOLATE    2 · MÁSCARA    3 · FRIO",
       "poster": null,
-      "start": 726,
-      "frames": 152,
-      "voice": null,
+      "start": 805,
+      "frames": 216,
+      "voice": "audio/end.mp3",
       "captions": [
         {
           "text": " Qual",
-          "startMs": 0.0,
-          "endMs": 357.14285714285717,
+          "startMs": 96.291,
+          "endMs": 339.332,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " desses",
-          "startMs": 357.14285714285717,
-          "endMs": 714.2857142857143,
+          "startMs": 350.916,
+          "endMs": 732.874,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " te",
-          "startMs": 714.2857142857143,
-          "endMs": 1071.4285714285716,
+          "startMs": 744.458,
+          "endMs": 825.458,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " enganou?",
-          "startMs": 1071.4285714285716,
-          "endMs": 1428.5714285714287,
+          "text": " enganou",
+          "startMs": 837.041,
+          "endMs": 1288.416,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " Comenta",
-          "startMs": 1428.5714285714287,
-          "endMs": 1785.7142857142858,
+          "startMs": 2083.333,
+          "endMs": 2580.999,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " um,",
-          "startMs": 1785.7142857142858,
-          "endMs": 2142.857142857143,
+          "text": " um",
+          "startMs": 2592.583,
+          "endMs": 2800.916,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " dois",
-          "startMs": 2142.857142857143,
-          "endMs": 2500.0,
+          "startMs": 3009.25,
+          "endMs": 3263.875,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " ou",
-          "startMs": 2500.0,
-          "endMs": 2857.1428571428573,
+          "startMs": 3275.458,
+          "endMs": 3437.499,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " três.",
-          "startMs": 2857.1428571428573,
-          "endMs": 3214.2857142857147,
+          "text": " três",
+          "startMs": 3449.083,
+          "endMs": 3877.333,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " Agora",
-          "startMs": 3214.2857142857147,
-          "endMs": 3571.4285714285716,
+          "startMs": 4675.916,
+          "endMs": 5069.416,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " assiste",
-          "startMs": 3571.4285714285716,
-          "endMs": 3928.571428571429,
+          "startMs": 5081.0,
+          "endMs": 5509.25,
           "timestampMs": null,
           "confidence": null
         },
         {
           "text": " de",
-          "startMs": 3928.571428571429,
-          "endMs": 4285.714285714286,
+          "startMs": 5520.833,
+          "endMs": 5601.833,
           "timestampMs": null,
           "confidence": null
         },
         {
-          "text": " novo.",
-          "startMs": 4285.714285714286,
-          "endMs": 4642.857142857143,
+          "text": " novo",
+          "startMs": 5613.416,
+          "endMs": 5960.624,
           "timestampMs": null,
           "confidence": null
         }
