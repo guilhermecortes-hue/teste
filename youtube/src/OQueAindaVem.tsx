@@ -11,7 +11,7 @@ import {
 } from "remotion";
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
-const cards = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 14].map(
+const cards = [1, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 15, 14].map(
   (number) => `proximos-cards/${String(number).padStart(2, "0")}.png`,
 );
 
