@@ -15,7 +15,15 @@ const cards = [1, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 15, 14].map(
   (number) => `proximos-cards/${String(number).padStart(2, "0")}.png`,
 );
 
-export const OQueAindaVem = () => {
+type OQueAindaVemProps = {
+  title?: string;
+  verticalTitle?: string;
+};
+
+export const OQueAindaVem = ({
+  title = "O que ainda vem por ai....",
+  verticalTitle = "O que ainda vem\npor ai....",
+}: OQueAindaVemProps) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
   const vertical = height > width;
@@ -142,20 +150,13 @@ export const OQueAindaVem = () => {
             fontSize: vertical ? 94 : 100,
             maxWidth: vertical ? 880 : undefined,
             lineHeight: vertical ? 1.18 : undefined,
+            whiteSpace: "pre-line",
             fontWeight: 700,
             letterSpacing: -3,
             textShadow: "0 8px 36px #35105466",
           }}
         >
-          {vertical ? (
-            <>
-              O que ainda vem
-              <br />
-              por ai....
-            </>
-          ) : (
-            "O que ainda vem por ai...."
-          )}
+          {vertical ? verticalTitle : title}
           <div
             style={{
               width: 180,
@@ -181,7 +182,7 @@ export const OQueAindaVem = () => {
           opacity: interpolate(frame, [2.8 * fps, 3.3 * fps], [0, 1], clamp),
         }}
       >
-        O que ainda vem por ai....
+        {title}
       </div>
       {cards.map((src, i) => {
         const local =
@@ -288,5 +289,9 @@ export const OQueAindaVemVerticalComposition = () => (
     height={1920}
     fps={30}
     durationInFrames={750}
+    defaultProps={{
+      title: "PARTICIPE DO OUTUBRO MOVIMENTE....",
+      verticalTitle: "PARTICIPE DO\nOUTUBRO\nMOVIMENTE....",
+    }}
   />
 );

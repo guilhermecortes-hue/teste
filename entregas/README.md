@@ -38,7 +38,7 @@ No GitHub, abra o MP4 e escolha **Download raw file** para baixar.
 
 ### Versão vertical para TikTok e Reels
 
-Mesmo vídeo em **1080×1920 (9:16)**, 25 segundos e 30 fps, com os mesmos 13 cards, card 14 por último, fundo roxo, brilhos e sons de pop-up. As artes aparecem inteiras, com título e indicadores reposicionados para o formato vertical. Composição editável: `OQueAindaVemVertical`.
+Mesmo vídeo em **1080×1920 (9:16)**, 25 segundos e 30 fps, com os mesmos 13 cards, card 14 por último, fundo roxo, brilhos e sons de pop-up. A frase da abertura e do cabeçalho é **“PARTICIPE DO OUTUBRO MOVIMENTE....”**. As artes aparecem inteiras, com título e indicadores reposicionados para o formato vertical. Composição editável: `OQueAindaVemVertical`.
 
 - [Baixar MP4 vertical para TikTok e Reels](o-que-ainda-vem-tiktok-reels.mp4)
 - [Ver prévia vertical](o-que-ainda-vem-tiktok-reels.png)
