@@ -1,0 +1,599 @@
+{
+  "fps": 30,
+  "totalFrames": 878,
+  "preview": true,
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "O terror te enganou. E estes três bastidores provam isso.",
+      "title": "O TERROR\nTE ENGANOU",
+      "label": "TRÊS SEGREDOS DE BASTIDOR",
+      "poster": null,
+      "start": 0,
+      "frames": 120,
+      "voice": null,
+      "captions": [
+        {
+          "text": " O",
+          "startMs": 0.0,
+          "endMs": 357.14285714285717,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " terror",
+          "startMs": 357.14285714285717,
+          "endMs": 714.2857142857143,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " te",
+          "startMs": 714.2857142857143,
+          "endMs": 1071.4285714285716,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " enganou.",
+          "startMs": 1071.4285714285716,
+          "endMs": 1428.5714285714287,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " E",
+          "startMs": 1428.5714285714287,
+          "endMs": 1785.7142857142858,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " estes",
+          "startMs": 1785.7142857142858,
+          "endMs": 2142.857142857143,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " três",
+          "startMs": 2142.857142857143,
+          "endMs": 2500.0,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " bastidores",
+          "startMs": 2500.0,
+          "endMs": 2857.1428571428573,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " provam",
+          "startMs": 2857.1428571428573,
+          "endMs": 3214.285714285714,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " isso.",
+          "startMs": 3214.285714285714,
+          "endMs": 3571.4285714285716,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "psycho",
+      "text": "Em Psicose, o sangue do chuveiro era calda de chocolate. No preto e branco, o truque funcionava.",
+      "title": "ERA\nCHOCOLATE.",
+      "label": "PSICOSE · 1960",
+      "poster": "psycho",
+      "start": 120,
+      "frames": 195,
+      "voice": null,
+      "captions": [
+        {
+          "text": " Em",
+          "startMs": 0.0,
+          "endMs": 357.1428571428572,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Psicose,",
+          "startMs": 357.1428571428572,
+          "endMs": 714.2857142857144,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " o",
+          "startMs": 714.2857142857144,
+          "endMs": 1071.4285714285713,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " sangue",
+          "startMs": 1071.4285714285713,
+          "endMs": 1428.571428571429,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 1428.571428571429,
+          "endMs": 1785.714285714286,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " chuveiro",
+          "startMs": 1785.714285714286,
+          "endMs": 2142.8571428571427,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " era",
+          "startMs": 2142.8571428571427,
+          "endMs": 2500.0000000000005,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " calda",
+          "startMs": 2500.0000000000005,
+          "endMs": 2857.142857142858,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " de",
+          "startMs": 2857.142857142858,
+          "endMs": 3214.285714285714,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " chocolate.",
+          "startMs": 3214.285714285714,
+          "endMs": 3571.428571428572,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " No",
+          "startMs": 3571.428571428572,
+          "endMs": 3928.571428571429,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " preto",
+          "startMs": 3928.571428571429,
+          "endMs": 4285.714285714285,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " e",
+          "startMs": 4285.714285714285,
+          "endMs": 4642.857142857143,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " branco,",
+          "startMs": 4642.857142857143,
+          "endMs": 5000.000000000001,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " o",
+          "startMs": 5000.000000000001,
+          "endMs": 5357.142857142858,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " truque",
+          "startMs": 5357.142857142858,
+          "endMs": 5714.285714285716,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " funcionava.",
+          "startMs": 5714.285714285716,
+          "endMs": 6071.4285714285725,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "halloween",
+      "text": "A máscara de Michael Myers era uma máscara do Capitão Kirk, de Star Trek, modificada e pintada de branco.",
+      "title": "VEIO DE\nSTAR TREK.",
+      "label": "HALLOWEEN · 1978",
+      "poster": "halloween",
+      "start": 315,
+      "frames": 216,
+      "voice": null,
+      "captions": [
+        {
+          "text": " A",
+          "startMs": 0.0,
+          "endMs": 357.1428571428572,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " máscara",
+          "startMs": 357.1428571428572,
+          "endMs": 714.2857142857144,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " de",
+          "startMs": 714.2857142857144,
+          "endMs": 1071.4285714285716,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Michael",
+          "startMs": 1071.4285714285716,
+          "endMs": 1428.571428571429,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Myers",
+          "startMs": 1428.571428571429,
+          "endMs": 1785.7142857142858,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " era",
+          "startMs": 1785.7142857142858,
+          "endMs": 2142.857142857143,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " uma",
+          "startMs": 2142.857142857143,
+          "endMs": 2500.0000000000005,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " máscara",
+          "startMs": 2500.0000000000005,
+          "endMs": 2857.142857142858,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 2857.142857142858,
+          "endMs": 3214.285714285714,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Capitão",
+          "startMs": 3214.285714285714,
+          "endMs": 3571.4285714285716,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Kirk,",
+          "startMs": 3571.4285714285716,
+          "endMs": 3928.5714285714294,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " de",
+          "startMs": 3928.5714285714294,
+          "endMs": 4285.714285714286,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Star",
+          "startMs": 4285.714285714286,
+          "endMs": 4642.857142857143,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Trek,",
+          "startMs": 4642.857142857143,
+          "endMs": 5000.000000000001,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " modificada",
+          "startMs": 5000.000000000001,
+          "endMs": 5357.142857142858,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " e",
+          "startMs": 5357.142857142858,
+          "endMs": 5714.285714285716,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " pintada",
+          "startMs": 5714.285714285716,
+          "endMs": 6071.4285714285725,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " de",
+          "startMs": 6071.4285714285725,
+          "endMs": 6428.571428571428,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " branco.",
+          "startMs": 6428.571428571428,
+          "endMs": 6785.714285714286,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "exorcist",
+      "text": "Em O Exorcista, o quarto foi refrigerado de verdade para a respiração dos atores aparecer na câmera.",
+      "title": "O FRIO\nERA REAL.",
+      "label": "O EXORCISTA · 1973",
+      "poster": "exorcist",
+      "start": 531,
+      "frames": 195,
+      "voice": null,
+      "captions": [
+        {
+          "text": " Em",
+          "startMs": 0.0,
+          "endMs": 357.1428571428572,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 357.1428571428572,
+          "endMs": 714.2857142857144,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Exorcista,",
+          "startMs": 714.2857142857144,
+          "endMs": 1071.4285714285713,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " o",
+          "startMs": 1071.4285714285713,
+          "endMs": 1428.571428571429,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " quarto",
+          "startMs": 1428.571428571429,
+          "endMs": 1785.714285714286,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " foi",
+          "startMs": 1785.714285714286,
+          "endMs": 2142.8571428571427,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " refrigerado",
+          "startMs": 2142.8571428571427,
+          "endMs": 2500.0000000000005,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " de",
+          "startMs": 2500.0000000000005,
+          "endMs": 2857.142857142858,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " verdade",
+          "startMs": 2857.142857142858,
+          "endMs": 3214.285714285714,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " para",
+          "startMs": 3214.285714285714,
+          "endMs": 3571.428571428572,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 3571.428571428572,
+          "endMs": 3928.571428571429,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " respiração",
+          "startMs": 3928.571428571429,
+          "endMs": 4285.714285714285,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " dos",
+          "startMs": 4285.714285714285,
+          "endMs": 4642.857142857143,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " atores",
+          "startMs": 4642.857142857143,
+          "endMs": 5000.000000000001,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " aparecer",
+          "startMs": 5000.000000000001,
+          "endMs": 5357.142857142858,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " na",
+          "startMs": 5357.142857142858,
+          "endMs": 5714.285714285716,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " câmera.",
+          "startMs": 5714.285714285716,
+          "endMs": 6071.4285714285725,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "text": "Qual desses te enganou? Comenta um, dois ou três. Agora assiste de novo.",
+      "title": "QUAL TE\nENGANOU?",
+      "label": "1 · CHOCOLATE    2 · MÁSCARA    3 · FRIO",
+      "poster": null,
+      "start": 726,
+      "frames": 152,
+      "voice": null,
+      "captions": [
+        {
+          "text": " Qual",
+          "startMs": 0.0,
+          "endMs": 357.14285714285717,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " desses",
+          "startMs": 357.14285714285717,
+          "endMs": 714.2857142857143,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " te",
+          "startMs": 714.2857142857143,
+          "endMs": 1071.4285714285716,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " enganou?",
+          "startMs": 1071.4285714285716,
+          "endMs": 1428.5714285714287,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Comenta",
+          "startMs": 1428.5714285714287,
+          "endMs": 1785.7142857142858,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " um,",
+          "startMs": 1785.7142857142858,
+          "endMs": 2142.857142857143,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " dois",
+          "startMs": 2142.857142857143,
+          "endMs": 2500.0,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " ou",
+          "startMs": 2500.0,
+          "endMs": 2857.1428571428573,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " três.",
+          "startMs": 2857.1428571428573,
+          "endMs": 3214.2857142857147,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " Agora",
+          "startMs": 3214.2857142857147,
+          "endMs": 3571.4285714285716,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " assiste",
+          "startMs": 3571.4285714285716,
+          "endMs": 3928.571428571429,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " de",
+          "startMs": 3928.571428571429,
+          "endMs": 4285.714285714286,
+          "timestampMs": null,
+          "confidence": null
+        },
+        {
+          "text": " novo.",
+          "startMs": 4285.714285714286,
+          "endMs": 4642.857142857143,
+          "timestampMs": null,
+          "confidence": null
+        }
+      ]
+    }
+  ]
+}

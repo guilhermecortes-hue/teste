@@ -42,3 +42,9 @@ Mesmo vídeo em **1080×1920 (9:16)**, 25 segundos e 30 fps, com os mesmos 13 ca
 
 - [Baixar MP4 vertical para TikTok e Reels](o-que-ainda-vem-tiktok-reels.mp4)
 - [Ver prévia vertical](o-que-ainda-vem-tiktok-reels.png)
+
+## Arquivo do Medo — projeto de Reels de terror
+
+Projeto editável em [`../terror-reels/`](../terror-reels/README.md), vertical 1080×1920, com roteiro, cinco cenas, cartazes ilustrados originais, trilha e efeitos. [Ver a prévia visual da capa](terror-reels-previa.png).
+
+**MP4 final pendente:** a narração e seus tempos reais ainda precisam ser gerados. A rede do ambiente bloqueou o serviço `speech.platform.bing.com` com HTTP 403. A prévia está identificada na imagem e não representa uma entrega narrada concluída. Os passos e resultados estão em [`VALIDACAO.md`](../terror-reels/VALIDACAO.md).
