@@ -1,3 +1,4 @@
+import { Audio } from "@remotion/media";
 import {
   AbsoluteFill,
   CanvasImage,
@@ -10,7 +11,7 @@ import {
 } from "remotion";
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
-const cards = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
+const cards = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 14].map(
   (number) => `proximos-cards/${String(number).padStart(2, "0")}.png`,
 );
 
@@ -28,6 +29,17 @@ export const OQueAindaVem = () => {
         overflow: "hidden",
       }}
     >
+      {cards.map((src, i) => (
+        <Audio
+          key={`pop-${src}`}
+          name={`Pop ${src}`}
+          src={staticFile("sfx/card-pop.wav")}
+          from={start + i * slot + Math.round((8 / 30) * fps)}
+          durationInFrames={Math.ceil(0.3 * fps)}
+          premountFor={fps}
+          volume={0.8}
+        />
+      ))}
       {[0, 1, 2].map((i) => (
         <div
           key={i}
