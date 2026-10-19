@@ -1,6 +1,6 @@
 # ARQUIVO DO MEDO — Reels em Remotion
 
-Projeto com código completo, roteiro, 3 pôsteres SVG ilustrados originais, fonte local, trilha de suspense e efeitos WAV originais. A narração brasileira e as legendas palavra a palavra são geradas automaticamente no ambiente de execução.
+Projeto com código completo, roteiro, cartazes de divulgação de Psicose, Halloween e O Exorcista, fonte local, trilha de suspense e efeitos WAV originais. A narração brasileira e as legendas palavra a palavra são geradas automaticamente no ambiente de execução.
 
 **Comece pelo PROMPT-CODEX.md:** envie a pasta ou este ZIP ao Codex, peça para extrair e seguir esse arquivo.
 
@@ -30,7 +30,7 @@ Saídas: `out/terror-reels.mp4` (H.264/AAC, 1080×1920, 30fps) e `out/capa.png`.
 - `src/Scene.tsx`: animações determinísticas por frame, composição visual, legendas e som.
 - `src/scenes/`: entrada de cada cena.
 - `scripts/prepare.py`: roteiro editável, geração TTS, sincronização, síntese musical e artes SVG.
-- `public/posters/`: três releituras ilustradas, identificadas como arte original; não são os cartazes oficiais nem fotografias dos filmes.
+- `public/posters/`: três cartazes em JPEG, usados nas cenas individuais, abertura e encerramento. As fontes estão em `FONTES.md`. Os SVGs da versão ilustrada anterior foram preservados, mas não aparecem no vídeo atual.
 - `public/audio/`: trilha, impacto, whoosh e tick. O tick está disponível como recurso opcional; a montagem usa impacto e whoosh.
 - `public/font.ttf`: DejaVu Sans Bold e licença anexa.
 - `src/timeline.json`: dados de cena; gerados automaticamente.
@@ -46,7 +46,7 @@ A duração inicial de prévia é aproximadamente 29 segundos. A versão narrada
 ## Editar
 Altere as falas em `SCENES` de `scripts/prepare.py`. Ao trocar uma fala, remova APENAS o MP3 e JSON correspondentes em `public/audio/` para invalidar o cache e execute novamente a preparação. Para trocar voz, altere `pt-BR-AntonioNeural`; invalide os cinco pares MP3/JSON. Edite títulos e rótulos no mesmo array.
 
-Para usar pôsteres oficiais que você já tenha, troque os SVGs por suas imagens e ajuste a extensão em Scene.tsx. A próxima preparação recria os SVGs originais, mas não altera seus arquivos JPG/PNG.
+O vídeo atual usa `psycho.jpg`, `halloween.jpg` e `exorcist.jpg` em `public/posters/`. A preparação de mídia pode recriar os SVGs antigos, mas não altera esses JPEGs e não os substitui no render. As legendas têm espaçamento explícito de 18 px entre palavras e 14 px entre linhas, com preenchimento interno em cada destaque.
 
 A trilha utiliza drone grave, pulso a 96 BPM e motivo de sintetizador original. A mixagem deixa o fundo a 23% do volume e os impactos a 40%. Confira o volume percebido no MP4 antes de publicar.
 

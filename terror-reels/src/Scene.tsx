@@ -10,48 +10,8 @@ import {
   useVideoConfig,
 } from "remotion";
 import { Audio } from "@remotion/media";
-import type { Caption } from "@remotion/captions";
 import timeline from "./timeline.json";
-const Captions: React.FC<{ captions: Caption[] }> = ({ captions }) => {
-  const f = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const ms = (f / fps) * 1000;
-  const active = captions.findIndex(
-    (c, i) => ms >= c.startMs && ms < (captions[i + 1]?.startMs ?? c.endMs),
-  );
-  if (active < 0) return null;
-  const start = Math.floor(active / 3) * 3;
-  return (
-    <div
-      style={{
-        position: "absolute",
-        top: 1440,
-        left: 90,
-        right: 150,
-        textAlign: "center",
-        fontSize: 58,
-        fontWeight: 900,
-        lineHeight: 1.32,
-      }}
-    >
-      {captions.slice(start, start + 3).map((c, i) => (
-        <span
-          key={start + i}
-          style={{
-            display: "inline-block",
-            padding: "3px 9px",
-            background: start + i === active ? "#deff63" : "#070b10",
-            color: start + i === active ? "#070b10" : "#fff",
-            borderRadius: 6,
-            boxShadow: "0 4px 24px #000",
-          }}
-        >
-          {c.text.trim()}
-        </span>
-      ))}
-    </div>
-  );
-};
+import { Captions } from "./Captions";
 export const Scene: React.FC<{ index: number }> = ({ index }) => {
   const s = timeline.scenes[index];
   const f = useCurrentFrame();
@@ -142,7 +102,7 @@ export const Scene: React.FC<{ index: number }> = ({ index }) => {
           }}
         >
           <CanvasImage
-            src={staticFile(`posters/${s.poster}.svg`)}
+            src={staticFile(`posters/${s.poster}.jpg`)}
             style={{ width: "100%", height: "100%", objectFit: "contain" }}
             premountFor={fps}
           />
@@ -175,12 +135,13 @@ export const Scene: React.FC<{ index: number }> = ({ index }) => {
           {["psycho", "halloween", "exorcist"].map((p, i) => (
             <CanvasImage
               key={p}
-              src={staticFile(`posters/${p}.svg`)}
+              src={staticFile(`posters/${p}.jpg`)}
               premountFor={fps}
               style={{
                 position: "absolute",
                 width: 350,
                 height: 525,
+                objectFit: "contain",
                 left: i * 220,
                 top: i === 1 ? 0 : 90,
                 rotate: `${(i - 1) * 13 + Math.sin(f / 30) * 2}deg`,

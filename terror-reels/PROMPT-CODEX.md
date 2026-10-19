@@ -1,6 +1,6 @@
 Abra este projeto Remotion e gere o Reels completo, não apenas uma explicação.
 
-1. Leia README.md, ROTEIRO.md e FONTES.md. Preserve o conceito, a veracidade dos três fatos e os pôsteres ilustrados originais incluídos.
+1. Leia README.md, ROTEIRO.md e FONTES.md. Preserve o conceito e a veracidade dos três fatos. Conforme a revisão solicitada pelo usuário, use os cartazes de divulgação JPEG em public/posters/; os SVGs ilustrados são apenas arquivos da versão anterior. Preserve o espaçamento entre palavras em src/Captions.tsx.
 2. Use Node 22.13+ ou 24, Python 3.10+ e FFmpeg/ffprobe. Instale as dependências com npm ci. Crie um ambiente Python com python3 -m venv .venv; instale requirements.txt nele e ative-o. Não desative verificação TLS para resolver problemas de rede.
 3. Execute npm run prepare:media. Esse comando deve gerar a voz pt-BR-AntonioNeural, os tempos reais das palavras, ajustar a duração de cada cena e regenerar a trilha. Exige acesso à internet para o serviço de voz. Se houver erro, diagnostique e informe; não exporte um vídeo final silencioso e não invente que a narração foi criada.
 4. Execute npm run check. Abra npm run dev para revisar o Studio. Confira as cinco cenas em 1080x1920 e os limites da interface do Reels. Os arquivos src/scenes permitem rever cada cena separadamente.

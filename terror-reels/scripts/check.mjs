@@ -6,4 +6,5 @@ for(const s of t.scenes){
  if(!s.captions.length)throw new Error('Legendas ausentes: '+s.id);
 }
 for(const file of ['score.wav','hit.wav','whoosh.wav','tick.wav'])if(!fs.existsSync('public/audio/'+file))throw new Error(file+' ausente');
+for(const file of ['psycho.jpg','halloween.jpg','exorcist.jpg'])if(!fs.existsSync('public/posters/'+file))throw new Error('Cartaz ausente: '+file);
 console.log('Mídia pronta para renderização.');
